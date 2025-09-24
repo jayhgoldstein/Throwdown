@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throwdown: The Card Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Throwdown</h1>
+
+    <div id="game-container">
+        <div id="status-area">
+            <h2 id="current-player-name"></h2>
+            <div id="player-hand-display"></div>
+        </div>
+
+        <div id="actions">
+            <h3>Actions</h3>
+            <div class="action-box">
+                <h4>Ask a Question</h4>
+                <select id="ask-player-select"></select>
+                <select id="ask-suit-select">
+                    <option value="Diamonds">Diamonds</option>
+                    <option value="Hearts">Hearts</option>
+                    <option value="Clubs">Clubs</option>
+                </select>
+                <button id="ask-button">Ask</button>
+            </div>
+
+            <div class="action-box">
+                <h4>Make a Guess</h4>
+                <div id="guess-inputs">
+                    </div>
+                <button id="guess-button">Guess!</button>
+            </div>
+        </div>
+
+        <div id="messages">
+            <h3>Game Log</h3>
+            <ul id="log"></ul>
+        </div>
+    </div>
+
+    <script src="dist/main.js"></script>
+</body>
+</html>
